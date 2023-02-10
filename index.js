@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-//const PORT = 8000
+const PORT = 8000
 
 const rappers = {
     '21 savage': {
@@ -35,7 +35,7 @@ app.get('/api/:name', (request,response)=>{
     
 })
 
-// app.listen(PORT,()=>{
-//     console.log(`The server is running on port ${PORT}`)
-// })
+app.listen(PORT,()=>{
+    console.log(`The server is running on port ${PORT}`)
+})
 
